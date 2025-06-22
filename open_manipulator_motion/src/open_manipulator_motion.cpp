@@ -45,7 +45,8 @@ OpenManipulatorMotion::~OpenManipulatorMotion()
     ros::shutdown();
     ros::waitForShutdown();
   }
-  wait();
+  // wait();
+   ros::Duration(1.0).sleep();
 }
 
 void OpenManipulatorMotion::initPublisher()
